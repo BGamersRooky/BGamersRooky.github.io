@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filip Babić - Biografija</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/6b3d427563.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="trafic()">
+    <!-- Navbar -->
+    <div class="navigation shadow" id="myNavigation">
+      <a href="index.html" id="pocetna">Početna</a>
+      <a href="cv.html" id="cv" class="active">CV</a>
+      <a href="portfolio.html" id="por">Portfolio</a>
+      <a href="biografija_en.html" id="bio">Biografija</a>
+      <a href="kontakt.html" id="kon">Kontakt</a>
+
+      <!-- Overflow Icon -->
+      <a href="javascript:void(0);" class="icon" onclick="navOverflow()"
+        ><i class="fa fa-bars"></i
+      ></a>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn" onclick="showDropDown()">
+          <img src="img/serbia.png" alt="lang_srb" />
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content shadow" id="myDropdown">
+          <a href="cv.html"
+            ><img src="img/serbia.png" alt="lang_srb"
+          /></a>
+          <a href="cv_en.html"
+            ><img src="img/united-kingdom.png" alt="lang_eng"
+          /></a>
+        </div>
+      </div>
+      <!-- Social links -->
+      <a href="https://www.linkedin.com/in/filip-babic-461891185/" class="social" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/BGamersRooky/" class="social" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/rooky.47/" class="social" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="bio"  style="padding-bottom: 50px;">
+        <div class="skills">
+          <h1>Veštine</h1>
+          <hr>
+          <div class="progress-border" style="margin-top: 20px !important;">
+            <div class="progress-bar" style="width: 75%;">Java, C#</div>
+          </div>
+          <div class="progress-border">
+            <div class="progress-bar" style="width: 75%;">HTML, CSS</div>
+          </div>
+          <div class="progress-border">
+            <div class="progress-bar" style="width: 60%;">JavaScript</div>
+          </div>
+          <div class="progress-border">
+            <div class="progress-bar" style="width: 95%;">Office Package</div>
+          </div>
+          <div class="progress-border">
+            <div class="progress-bar" style="width: 70%;">Adobe Package</div>
+          </div>
+          <div class="progress-border">
+            <div class="progress-bar" style="width: 40%;">3D modeling</div>
+          </div>
+
+        </div>
+
+        <div id="education">
+          <h1>Obrazovanje</h1>
+          <hr>
+          <div class="school">
+            <p>ETŠ "Nikola Tesla", Beograd<div class="school-year">2013. - 2017.</div>
+            <small>Elektrotehničar multimedija</small></p>
+            
+          </div>
+          <div class="school">
+            <p>Visoka škola elektrotehnike i računarstva stručnih studija, Beograd <div class="school-year">Upisan 2018.</div>
+            <small>Strukovni inženjer informacionih tehnologija i sistema</small></p>
+          </div>
+        </div>
+
+        <div id="language">
+          <h1>Poznavanje jezika</h1>
+          <hr>
+          <ul>
+            <li class="language-li">Srpski jezik (Maternji jezik)</li>
+            <ul>
+              <li>Pričanje: Odlično</li>
+              <li>Čitanje: Odlično</li>
+              <li>Pisanje: Odlično</li>
+            </ul>
+            <li class="language-li">Engleski jezik</li>
+            <ul>
+              <li>Pričanje: Odlično</li>
+              <li>Čitanje: Odlično</li>
+              <li>Pisanje: Vrlo Dobro</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div id="work">
+          <h1>Radno iskustvo</h1>
+          <hr>
+          <div class="job">
+            <div class="job-possition">Freelance programer/web designer</div>
+            <div class="job-employer">Samozaposlen</div>
+            <div class="job-time">Sep, 2017. - Danas</div>
+            <div class="job-description">
+                Povremeni rad na malim poslovima preko interneta ili za poznanike. Kao free lancer sam radio najviše web design i adobe paket (after effects, premier, photoshop) ali i neke manje poslove u Maya3D.
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-possition">Agent korisničkog servisa na Engleskom jeziku</div>
+            <div class="job-employer">Sitel, Španskih Boraca 3, Beograd</div>
+            <div class="job-time">19. Aug, 2019. - 20. Jan, 2021.</div>
+            <div class="job-description">
+              Rad u velikom timu za klijente Sitel-a, koji podrazumeva
+              komunikaciju na engleskom jeziku sa korisnicima klijentovih servisa.
+              Odgovaranje na pitanja, rešavanje mogućih problema sa kojima se suočavaju i osiguravanje zadovoljstva
+              kupaca. Rad na računaru, prolazak kroz bazu podataka, identifikacija problema i uklanjanje istog,
+              logovanje problema radi daljeg rešavanja.
+            </div>
+          </div>
+          <h2>Letnji Poslovi:</h2>
+          <div class="job">
+            <div class="job-possition">Prodavac u butiku odeće</div>
+            <div class="job-employer">H&M, Tržni Centar Stadion, Beograd</div>
+            <div class="job-time">4. Sep, 2018. - 2. Oct, 2018.</div>
+            <div class="job-description">
+              Posao podrazumeva rad sa mušterijama, prodaja odeće, rad na kasi, izlaganje proizvoda, rad u magacinu.
+            </div>
+          </div>
+          <div class="job">
+            <div class="job-possition">Rad na montažnoj liniji / Sklapanje televizora</div>
+            <div class="job-employer">Kimtek Servis, Viline Vode, Beograd</div>
+            <div class="job-time">30. Nov, 2017. - 8. Dec, 2017.</div>
+            <div class="job-description">
+              Rad na pokretnoj traci - ugrađivanje komponenata i sklapanje
+              televizora, provera ispravnosti.
+            </div>
+          </div>
+          <div class="job">
+            <div class="job-possition">Rad u kuhinji</div>
+            <div class="job-employer">McDonald's, Bežanijska kosa, Beograd</div>
+            <div class="job-time">2. Aug, 2017. - 10. Sep, 2017.</div>
+            <div class="job-description">
+              Rad u kuhinji - korišćenje friteze i batchcooking mašine (roštilja),
+              sklapanje sendviča, pranje opreme i kuhinje.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Most Used Button -->
+    <div class="most-used">
+      <button class="mu-button" onclick="showMostUsed()" id="mu-button-id">
+        <i class="fas fa-clock fa-5x"></i>
+      </button>
+      <div class="mu-content" id="myMostUsed">
+        <span class="mu-title">Najposećeniji: </span>
+        <hr />
+      </div>
+    </div>
+    <script src="posecenost.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

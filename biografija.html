@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filip Babić - O meni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/6b3d427563.js" crossorigin="anonymous"></script>
+</head>
+<body onload="trafic()">
+    <!-- Navbar -->
+    <div class="navigation shadow" id="myNavigation">
+        <a href="index.html" id="pocetna">Početna</a>
+        <a href="cv.html" id="cv">CV</a>
+        <a href="portfolio.html" id="por">Portfolio</a>
+        <a href="biografija.html" id="bio" class="active">Biografija</a>
+        <a href="kontakt.html" id="kon">Kontakt</a>
+
+    <!-- Overflow Icon -->
+        <a href="javascript:void(0);" class="icon"  onclick="navOverflow()"><i class="fa fa-bars"></i></a>
+
+    <!-- Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="showDropDown()"><img src="img/serbia.png" alt="lang_srb">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content shadow" id="myDropdown">
+                <a href="biografija.html"><img src="img/serbia.png" alt="lang_srb"></a>
+                <a href="biografija_en.html"><img src="img/united-kingdom.png" alt="lang_eng"></a>
+            </div>
+        </div>
+    <!-- Social links -->
+        <a href="https://www.linkedin.com/in/filip-babic-461891185/" class="social" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/BGamersRooky/" class="social" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/rooky.47/" class="social" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="hobby">
+            <div class="hobby-content">
+                <div class="hobby-img left shadow">
+                    <img src="img/hobby1.jpg" alt="" style="object-position: 65% 0;">
+                </div>
+                <div class="hobby-middle">
+                    <div id="hobby-text">
+                        <h2>O meni</h2>
+                        <p>
+                            Zdravo, moje ime je Filip Babić. <br><br>
+                            
+                            Imam 23 godine, živim u Beogradu, a po struci sam Elektrotehničar Multimedije, diplomirao u Elektrotehničkoj Školi "Nikola Tesla" u Beogradu. <br>
+                            Trenutno sam student završne godine Visoke Škole Elektrotehnike i Računarstva takođe u Beogradu, na smeru informacioni sistemi.
+                            <br><br>
+                            Od kako znam za sebe okružen sam kompjuterima i video igricama. Prvo sećanje koje imam o sebi kako koristim kompjuter je kada sam
+                            imao svega 4 godine. Igrao sam se u Paint-u na tatinom kancelarijskom računaru, kao i igrice koje u to vreme nisam ni znao
+                            kako se igraju, ali su mi idalje bile interesantne. 
+                            Tada je nastala moja ljubav prema digitalnom svetu i njegovim beskrajnim mogućnostima.
+                            <br><br>
+                        </p>
+                        <h3>Edukacija</h3>
+                        <p>
+                            Oduvek sam bio kreativno dete, voleo da maštam o nemogućem i da stvaram nešto novo ni iz čega. Zbog toga i moje ljubavi prema
+                            video igricama, odlučio sam da postanem Video Game Developer i da napravim ono u čemu sam uživao sve te godine.
+                            Po završetku osnovne škole moj prvi korak je bio da upišem multimediju u ETŠ "Nikola Tesla" sa ciljem da naučim više o programiranju.
+                            <br><br>
+                            Nakon srednje škole nastavio sam svoj put ka znanju i upisao prvu godinu na Matematičkom Fakultetu, smer za informatiku i računarstvo.
+                            Nažalost ubrzo sam shvatio da ovaj fakultet nije ono što sam ja želeo tako da sam odustao, napravio pauzu od par meseci i sledeće školske godine upisao sam
+                            Visoku Školu Elektrotehnike i Računarstva.
+                            <br><br>
+                            Osećao sam da je ovo bila sjajna promena i mnogo mi se više svideo plan i program koji sam imao i stvari koje sam učio.
+                            Na ovom fakultetu pored toga što želim da se bavim game development-om shvatio sam da mi se sviđa i web deseign tako da sam počeo
+                            da se bavim i ovime kao freelancer u slobodno vreme.
+                            <br><br>
+                            Iako je ovaj fakultet sjajan, postalo mi jasno da znanje koje ja tražim neću moći da nađem ni u jednoj školi, nego ću
+                            pravo iskustvo i znanje dobiti tek kada budem počeo aktivno da se bavim profesijom. U međuvremenu pokušavam da naučim što više stvari
+                            iz različitih izvora kao što su YouTube, internet i igrice koje aktivno igram.
+                        </p>
+                        <h3>Hobiji i interesovanja</h3>
+                        <p>
+                            Kao što sam već pomenuo, moji najveći hobi i interesovanje su video igrice. Igram sve bez obzira na žanr ili tematiku, od FPS do starih GameBoy igrica,
+                            sve dok mi nešto deluje zanimljivo verovatno ću ga probati. 
+                            <br><br>
+                            Neke od omiljenih igrica koje igram godinama i uvek im se vraćam su League of Legends, Minecraft i Europa Universalis IV. 
+                            <br><br>
+                            LoL je igrica preko koje sam upoznao neke od svojih sada najboljih prijatelja, smatram da je veoma interesantna za igru sa društvom.
+                            Minecraft je kreativni raj zbog čega ga obožavam i proveo sam izuzetan broj sati igrajući ga. Sa jakom modding platformom, ova igrica prosto nikada ne može da mi dosadi.
+                            EUIV je grand scale strategija smeštena od vremena renesanse pa od napoleonskih ratova. Veoma je izazovna i kompleksna, zbog čega je jako volim. Kada se udubim u EUIV, sati postanu minuti dok pokušavam da osvojim ceo svet.                            
+                            Još jedna igrica koju mnogo volim je Black Desert Online. Ogroman sam fan MMO RPG igrica i ovaj žanr predstavlja ono čime bih najviše želeo da se bavim. Voleo bi da iza sebe ostavim svoj virtuelni svet.
+                            Nažalost ne mogu da igram ovu igricu koliko i pre pošto zahteva previše vremena, ali je i dalje igram kao "casual" igrač.
+                            <br><br>
+                            Još neke igrice koje sam igrao ili ih i dalje igram su: CSGO, Fortnite, ARK: Survival Evolved, AFK Arena, Rise of Kingdoms, Escape from Tarkov, Assassins Creed, Last of Us, Skyrim, Witcher 3, Cyberpunk 2077...
+                            <br><br>
+                            Pored igrica, ceo život sam se bavio sportom. U poslednjih par godina sam u potpunosti zapostavio ovaj deo mog života, ali bih želeo da opet treniram nešto.
+                            Takođe volim da gledam anime, serije i filmove kao i da slušam muziku, a od skoro sam počeo da učim da sviram klavir.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby-img right shadow">
+                    <img src="img/OmeniDesno.jpg" alt="" style="object-position: 83% 0;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Most Used Button -->
+    <div class="most-used">
+        <button class="mu-button" onclick="showMostUsed()" id="mu-button-id">
+            <i class="fas fa-clock fa-5x"></i>
+        </button>
+        <div class="mu-content" id="myMostUsed">
+            <span class="mu-title">Najposećeniji: </span><hr>
+        </div>
+    </div>
+    <script src="posecenost.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+</html>

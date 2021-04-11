@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filip Babić - Galerija</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/6b3d427563.js" crossorigin="anonymous"></script>
+</head>
+<body onload="trafic()">
+    <!-- Navbar -->
+    <div class="navigation shadow" id="myNavigation">
+        <a href="index.html" id="pocetna">Početna</a>
+        <a href="cv.html" id="cv">CV</a>
+        <a href="portfolio.html" id="por" class="active">Portfolio</a>
+        <a href="biografija.html" id="bio">Biografija</a>
+        <a href="kontakt.html" id="kon">Kontakt</a>
+
+    <!-- Overflow Icon -->
+        <a href="javascript:void(0);" class="icon"  onclick="navOverflow()"><i class="fa fa-bars"></i></a>
+
+    <!-- Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="showDropDown()">
+                <img src="img/serbia.png" alt="lang_srb">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content shadow" id="myDropdown">
+                <a href="portfolio.html"><img src="img/serbia.png" alt="lang_srb"></a>
+                <a href="portfolio_en.html"><img src="img/united-kingdom.png" alt="lang_eng"></a>
+            </div>
+        </div>
+    <!-- Social links -->
+    <a href="https://www.linkedin.com/in/filip-babic-461891185/" class="social" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/BGamersRooky/" class="social" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/rooky.47/" class="social" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="gallery" style="padding-bottom: 50px;">
+            <div class="gal-title">Riven's Sword (League of Legends)</div>
+            <div class="gal-content">
+                <div class="gal-img">
+                    <img src="img/riv1.jpg" alt="Riven's Sword Full View" class="shadow">
+                    <img src="img/riv2.jpg" alt="Riven's Sword Zoomed in View" class="shadow">
+                    <img src="img/riv3.jpg" alt="Riven's Sword Mesh" class="shadow">
+                </div>
+                <div class="gal-text">
+                    Mač lika Riven iz poznate igrice League of Legends. Projekat je rađen kao maturski rad za završetak srednje škole. <br>
+                    Ovo je "high poly" replika modela iz igrice. 3D model je urađen u programu Maya3D.
+                </div><hr>
+            </div>
+
+            <div class="gal-title">CandyShop Website</div>
+            <div class="gal-content">
+                <div class="gal-img">
+                    <img src="img/candy1.jpg" alt="CandyShop početna stranica" class="shadow">
+                    <img src="img/candy2.jpg" alt="CandyShop proizvodi stranica" class="shadow">
+                    <img src="img/candy3.jpg" alt="CandyShop kontakt stranica" class="shadow">
+                </div>
+            </div>
+            <div class="gal-text">
+                CandyShop je website rađen kao projekat iz predmeta Web Dizajn iz trećeg semestra VIŠER-a.
+                Projekat je podrazumevao pravljenje komercijalnog sajta sa Bootstrap 4 bibliotekom.
+                CandyShop je imaginarna web prodavnica slatkiša po uzoru na "Dylan's candy bar".
+                Sajt ima više od 12 stranica sa različitim Bootstrap komponentama.
+            </div><hr>
+
+            <div class="gal-title">SKI Website</div>
+            <div class="gal-content">
+                <div class="gal-img">
+                    <img src="img/ski1.jpg" alt="SKI početna stranica" class="shadow">
+                    <img src="img/ski2.jpg" alt="SKI prvi zadatak" class="shadow">
+                    <img src="img/ski3.jpg" alt="SKI treći zadatak" class="shadow">
+                </div>
+            </div>
+            <div class="gal-text">
+                Sajt je pravljen za projekat iz predmeta Standardni Korisnički Interfejsi iz 3. semestra studija.
+                Projekat je napravljen kompletno iz početka uz pomoć HTML, CSS i JavaScript-a.
+                Svrha programa je web dizajn sa implementacijom JavaScript-a, tako da je i projekat zahtevao snalaženje u ovom jeziku.
+                Projekat ima četiri strane, početnu stranu i 3 zadatka. Početna strana se sastoji od CSS animirane reklame na vrhu strane,
+                3 link-a koji vode do stranica sa zadacima, sekciju sa podacima o studentu i sekciju sa tekstom koji se menja na svakih 10 sekundi.
+                Prvi zadatak je program koji izračunava sistem od 3 jednačine sa 3 nepoznate i ispisuje rešenje. <br>
+                Drugi zadatak je implementacija video player-a sa opcijom odabira sadržaja na stranici. <br>
+                Treći zadatak je igrica. Brojevi se pojavljuju naizmenično na ekranu u tabeli 4x4 u rastućem poretku.
+                Igrač treba da klikne na 16 brojeva za 10 sekundi ili manje kako bi pobedio. <br>
+                Svaka stranica ima i footer sa linkom za vraćanje na početnu stranicu.
+            </div><hr>
+
+            <div class="gal-title">Igrica "Battleships"</div>
+            <div class="gal-content">
+                <div class="gal-img">
+                    <img src="img/Podmornice 1.jpg" alt="Battleships početak igre" class="shadow">
+                    <img src="img/Podmornice 2.jpg" alt="Battleships kod" class="shadow">
+                    <img src="img/Podmornice 3.jpg" alt="Battleships klase" class="shadow">
+                </div>
+            </div>
+            <div class="gal-text">
+                Igrica je urađena kao ispitni projekat za predmet Objektno Orjentisano Projektovanje.
+                Zadatak projekta je bio da se napravi Java aplikacija uz pomoć osnovnih osobina objektno orjentisanog programiranja,
+                korišćenje klasa, interfejsa, metoda i njihova međusobna povezanost. <br>
+
+                U pitanju je popularna društvena igra Battleships (Potapanje podmornica).
+                Napravljena je da bude prikazana u konzoli radi jednostavnosti programa ali bi sam kod mogao biti povezan i sa UI elementima.
+
+                Ideja za igru je da dva igrača imaju program i jedan drugom postave brodove na tablu i kada potvrde položaj pokrenu igru.
+                Nakon što je igra pokrenuta, pozicije brodova postanu skrivene i igrači imaju zadatak da za što manje poteza potope sve protivničke brodove.
+
+                Na kraju igre, igrači dobiju informaciju o tome koliko im je poteza trebalo da završe igru i pobednik je onaj sa najmanje poteza.
+                Takođe rezultati su logovani u .txt fajl sa datumom igre i rezultatom.
+            </div><hr>
+
+            <div class="gal-title">C# aplikacija prodavnice</div>
+            <div class="gal-content">
+                <div class="gal-img">
+                    <img src="img/TVP Projekat 1 1.jpg" alt="Aplikacija prodavnice" class="shadow">
+                    <img src="img/TVP Projekat 1 2.jpg" alt="Aplikacija prodavnice - Statistika" class="shadow">
+                    <img src="img/TVP Projekat 1 3.jpg" alt="Primer koda aplikacije" class="shadow">
+                </div>
+            </div>
+            <div class="gal-text">
+                U pitanju je aplikacija napravljena kao prvi projektni rad iz predmeta Tehnike Vizuelnog Programiranja.
+                Cilj projekta je bio da se napravi Windows Forms aplikacija koja se može koristiti kao prodavnica.
+
+                Program je pisan u Visual Studiu u C# programskom jeziku. Pri pokretanju aplikacije korisnik mora prvo da se uloguje.
+                Postoje dve vrste naloga, Korisnički i Administratorski. <br>
+                Korisnički nalozi mogu samo da pregledaju dostupne proizvode, prave porudžbine i otkazuju porudžbine koje su oni napravili. 
+                Administratorski nalozi pored ovih opcija imaju mogućnost da upravljaju registrovanim korisnicima i proizvodima 
+                (dodaju nove i menjaju podatke već postojećih),
+                i imaju mogućnost da pregledaju statistiku o prodajama prodavnice, gde se prikazuje broj porudžbina u proteklih godinu dana u formi dijagrama
+                po mesecima. <br>
+
+                Svi podaci se čuvaju u tekstualnim datotekama koje se obrađuju po potrebi u programu.
+            </div><hr>
+            <div class="gal-title">C# Knjižara</div>
+            <div class="gal-content">
+                <div class="gal-img">
+                    <img src="img/TVP Projekat 2 1.jpg" alt="Aplikacija Knjižare" class="shadow">
+                    <img src="img/TVP Projekat 2 2.jpg" alt="Primer aplikacije u upotrebi" class="shadow">
+                    <img src="img/TVP Projekat 2 3.jpg" alt="Primer koda aplikacije" class="shadow">
+                </div>
+            </div>
+            <div class="gal-text">
+                Aplikacija Knjižare je takođe pravljena kao projektni rad iz predmeta Tehnike Vizuelnog Programiranja.
+                Zadatak ovog projekta je bio da se napravi Windows Forms aplikacija korišćenjem C# programskog jezika i
+                da se svi podaci korišćeni u samoj aplikaciji čuvaj u SQL ili Microsoft Access bazi podataka.
+                <br>
+                Aplikacija ima mogućnost pretrage po imenu autora ili nazivu knjige. Proizvodi mogu biti i filtrirani na osnovu kategorije kojoj pripadaju.
+                <br>
+                Dodavanje novih knjiga pravi novi objekat koji je potom dodat u bazu podataka i prikazan u prodavnici.
+                <br>
+                Klikom na dugme kupi, pravi se log o kupovini koji je takođe dodat u bazu podataka. Ovaj log sadrži podatke o kupljenim proizvodima i njihovoj ceni.
+                I nakon kupovine, aplikacija prazni korpu i spremna je za sledeću kupovinu.
+
+            </div><hr>
+
+        </div>
+    </div>
+
+    <!-- Most Used Button -->
+    <div class="most-used">
+        <button class="mu-button" onclick="showMostUsed()" id="mu-button-id">
+            <i class="fas fa-clock fa-5x"></i>
+        </button>
+        <div class="mu-content" id="myMostUsed">
+            <span class="mu-title">Najposećeniji: </span><hr>
+        </div>
+    </div>
+    <script src="posecenost.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+</html>

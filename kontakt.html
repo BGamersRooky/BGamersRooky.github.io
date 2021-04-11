@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filip Babić - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/6b3d427563.js" crossorigin="anonymous"></script>
+</head>
+<body onload="trafic()">
+    <!-- Navbar -->
+    <div class="navigation shadow" id="myNavigation">
+        <a href="index.html" id="pocetna">Početna</a>
+        <a href="cv.html" id="cv">CV</a>
+        <a href="portfolio.html" id="por">Portfolio</a>
+        <a href="biografija.html" id="bio">Biografija</a>
+        <a href="kontakt.html" id="kon" class="active">Kontakt</a>
+
+    <!-- Overflow Icon -->
+        <a href="javascript:void(0);" class="icon"  onclick="navOverflow()"><i class="fa fa-bars"></i></a>
+
+    <!-- Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="showDropDown()"><img src="img/serbia.png" alt="lang_srb">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content shadow" id="myDropdown">
+                <a href="kontakt.html"><img src="img/serbia.png" alt="lang_srb"></a>
+                <a href="kontakt_en.html"><img src="img/united-kingdom.png" alt="lang_eng"></a>
+            </div>
+        </div>
+    <!-- Social links -->
+    <a href="https://www.linkedin.com/in/filip-babic-461891185/" class="social" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/BGamersRooky/" class="social" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/rooky.47/" class="social" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="contact">
+            <div class="contact-box shadow">
+                <div class="contact-text">
+                    <p>
+                        Ukoliko vam je moj E-Portfolio bio interesantan, možete me kontaktirati putem mojih socijalnih medija u gornjem desnom ćošku, ili putem telefona/emaila
+                    </p>
+                </div>
+                <div id="contact-line"></div>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> Telefon: 
+                    <a href="tel: +381606088281">+381&nbsp60&nbsp6088281</a></p>
+                    <p><i class="fas fa-at"></i></i> Email: 
+                    <a href="mailto: rookybusiness@gmail.com">rookybusiness@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Most Used Button -->
+    <div class="most-used">
+        <button class="mu-button" onclick="showMostUsed()" id="mu-button-id">
+            <i class="fas fa-clock fa-5x"></i>
+        </button>
+        <div class="mu-content" id="myMostUsed">
+            <span class="mu-title">Najposećeniji: </span><hr>
+        </div>
+    </div>
+    <script src="posecenost.js"></script>
+    <script src="navigation.js"></script>
+
+</body>
+</html>

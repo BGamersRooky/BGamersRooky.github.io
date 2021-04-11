@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filip Babić - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/6b3d427563.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navigation shadow" id="myNavigation">
+        <a href="index_en.html" id="pocetna" class="active">Home</a>
+        <a href="cv_en.html" id="cv">CV</a>
+        <a href="portfolio_en.html" id="por">Portfolio</a>
+        <a href="biografija_en.html" id="bio">Biography</a>
+        <a href="kontakt_en.html" id="kon">Contact</a>
+
+    <!-- Overflow Icon -->
+        <a href="javascript:void(0);" class="icon"  onclick="navOverflow()"><i class="fa fa-bars"></i></a>
+
+    <!-- Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="showDropDown()">
+                <img src="img/united-kingdom.png" alt="lang_eng">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content shadow" id="myDropdown">
+                <a href="index.html"><img src="img/serbia.png" alt="lang_srb"/></a>
+                <a href="index_en.html"><img src="img/united-kingdom.png" alt="lang_eng"/></a>
+            </div>
+        </div>
+    <!-- Social links -->
+        <a href="https://www.linkedin.com/in/filip-babic-461891185/" class="social" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/BGamersRooky/" class="social" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/rooky.47/" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="wip">
+            <p>This page is currently under construction! <br>
+            Please return back to the Serbian version by clicking <a href="index.html">here</a>!</p>
+        </div>
+    </div>
+
+    <script src="posecenost.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
